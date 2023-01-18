@@ -1,29 +1,22 @@
 package ru.synergy.kotlinpractice
 
-import android.location.Location
 
-    /* ПАКЕТЫ И ИМПОРТЫ
-class Person (val name: String, var age: Int) {
 
-    fun sayHello() {
-        print("Hello my name is $name")
-    }
-
-    fun go(location: String) {
-        print("$name goes to $location")
-    }
-
-    fun personToString(): String {
-        return "Name: $name, age: $age"
-    }
-    }
- */
-
-    // НАСЛЕДОВАНИЕ и ПОЛИМОРФИЗМ
-
-open class Person (val name: String) {
+open class Person (val userName: String?, val password: String) {
     fun printName() {
-        print(name)
+        print(userName)
+    }
+
+    private val account: Account = Account(userName?: "No name", password)
+
+    private class Account (val userName: String, val password: String) {
+    }
+    fun showDetails() {
+        print("UserName: $userName Password: $password")
+    }
+
+    open fun sayHello() {
+        print("Hi, my name is $userName")
     }
 }
 
