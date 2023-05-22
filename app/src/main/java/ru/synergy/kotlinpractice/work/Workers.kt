@@ -3,6 +3,7 @@ package ru.synergy.kotlinpractice.work
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import ru.synergy.kotlinpractice.R
 import ru.synergy.kotlinpractice.databinding.ActivityYoutuberBinding
 
 class Workers : AppCompatActivity() {
@@ -22,41 +23,50 @@ class Workers : AppCompatActivity() {
             when (resultValue) {
 
                 Constance.DEVELOPER -> {
+                    bindingClass.textViewResult.visibility = View.VISIBLE
+                    bindingClass.imageViewPhoto.visibility = View.VISIBLE
                     val timeText = "Получите ваши ${Constance.DEVELOPER_SALARY}"
-                   bindingClass.textViewResult.text = if (bindingClass.editTextPassword.text.toString()
+                    if (bindingClass.editTextPassword.text.toString()
                        == Constance.DEVELOPER_PASSWORD
                    ) {
-                       timeText
+                        bindingClass.textViewResult.text = timeText
+                        bindingClass.imageViewPhoto.setImageResource(R.drawable.developer)
                     } else {
-                        "Неверный пароль"
+                        bindingClass.textViewResult.text = "Неверный пароль"
                     }
                 }
                 Constance.COACH -> {
+                    bindingClass.textViewResult.visibility = View.VISIBLE
+                    bindingClass.imageViewPhoto.visibility = View.VISIBLE
                     val timeText = "Получите ваши ${Constance.COACH_SALARY}"
-                    bindingClass.textViewResult.text =
-                        if (bindingClass.editTextPassword.text.toString()
+                    if (bindingClass.editTextPassword.text.toString()
                             == Constance.COACH_PASSWORD
                         ) {
-                            timeText
+                        bindingClass.textViewResult.text = timeText
+                        bindingClass.imageViewPhoto.setImageResource(R.drawable.coach)
                         } else {
-                            "Неверный пароль"
+                        bindingClass.textViewResult.text = "Неверный пароль"
                         }
                 }
 
                 Constance.MANAGER -> {
+                    bindingClass.textViewResult.visibility = View.VISIBLE
+                    bindingClass.imageViewPhoto.visibility = View.VISIBLE
                     val timeText = "Получите ваши ${Constance.MANAGER_SALARY}"
-                    bindingClass.textViewResult.text =
-                        if (bindingClass.editTextPassword.text.toString()
+                    if (bindingClass.editTextPassword.text.toString()
                             == Constance.MANAGER_PASSWORD
                         ) {
-                            timeText
+                        bindingClass.textViewResult.text = timeText
+                        bindingClass.imageViewPhoto.setImageResource(R.drawable.manager)
                         } else {
-                            "Неверный пароль"
+                        bindingClass.textViewResult.text = "Неверный пароль"
                         }
                 }
 
                 else -> {
                     bindingClass.textViewResult.visibility = View.VISIBLE
+                    bindingClass.imageViewPhoto.visibility = View.VISIBLE
+                    bindingClass.imageViewPhoto.setImageResource(R.drawable.coworker)
                     bindingClass.textViewResult.text = "Нет такого сотрудника"
 
                 }

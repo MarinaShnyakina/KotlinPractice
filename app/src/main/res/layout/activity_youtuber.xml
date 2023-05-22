@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="400dp"
         android:text="@string/enterQuantity"
         android:textColor="@color/black"
         android:textSize="17sp"
@@ -67,6 +67,17 @@
         app:layout_constraintBottom_toTopOf="@+id/buttonResult"
         app:layout_constraintEnd_toEndOf="@+id/buttonResult"
         app:layout_constraintStart_toStartOf="@+id/buttonResult" />
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coworker" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

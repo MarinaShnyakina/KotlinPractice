@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinPractice</string>
+    <string name="enterQuantity">Enter the number of your followers: </string>
+    <string name="editTextValue">Number of followers</string>
+    <string name="textButton">Show result</string>
+    <string name="editTextPassword">Enter your password</string>
+</resources>
