@@ -4,6 +4,7 @@ import android.provider.MediaStore
 
 // ПРАВИЛА ПЕРЕОПРЕДЕЛЕНИЯ
 
+/*
 open class Video {
     open fun play() {
         print("Play video")
@@ -22,3 +23,5 @@ class MediaPlayer(): Video(), AudioPlayer {
         super<AudioPlayer>.play()
     }
 }
+
+ */

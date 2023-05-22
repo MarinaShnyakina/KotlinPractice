@@ -3,6 +3,7 @@ package ru.synergy.kotlinpractice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.*
@@ -12,6 +13,7 @@ import kotlinx.coroutines.channels.produce
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
+import ru.synergy.kotlinpractice.databinding.ActivityYoutuberBinding
 import java.util.Objects
 
 
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_youtuber)
 
         // ВНУТРЕННИЕ И АНОНИМНЫЕ КЛАССЫ
 
@@ -384,7 +386,7 @@ suspend fun doWork() {
     */
 
         // АСИНХРОННЫЕ ПОТОКИ
-
+/*
         val userFlow = flowOf("Katy", "Marina", "Hvost", "Hrysha")
 
         // userFlow.collect()  -  тут нужна коротина
@@ -405,7 +407,7 @@ suspend fun doWork() {
                 print("Emit $i item")
                 emit(item)   // имитируем значение
                 i++
-            }
+            } */
         }
 
 }

@@ -1,6 +1,6 @@
 package ru.synergy.kotlinpractice
 
-
+/*
 
 
 // ENAM CLASSES
@@ -60,3 +60,5 @@ fun test() {
     pixel.send("Hello from synergy")
 
 }
+
+ */

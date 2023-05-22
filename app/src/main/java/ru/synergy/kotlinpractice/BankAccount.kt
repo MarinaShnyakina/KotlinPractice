@@ -1,5 +1,5 @@
 package ru.synergy.kotlinpractice
-
+/*
 class BankAccount (private var sum: Int) {
 
     fun display() {
@@ -17,3 +17,4 @@ class BankAccount (private var sum: Int) {
 
 }
 
+*/

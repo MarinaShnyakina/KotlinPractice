@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KotlinPractice</string>
+    <string name="enterQuantity">Введите количество ваших подписчиков: </string>
+    <string name="editTextValue">Кол-во подписчиков</string>
+    <string name="textButton">Показать результат</string>
+    <string name="editTextPassword">Введите ваш пароль</string>
 </resources>

@@ -1,6 +1,6 @@
 package ru.synergy.kotlinpractice
 
-
+/*
 
 open class Person (val userName: String?, val password: String) {
     fun printName() {
@@ -20,4 +20,6 @@ open class Person (val userName: String?, val password: String) {
     }
 }
 
+
+ */
 

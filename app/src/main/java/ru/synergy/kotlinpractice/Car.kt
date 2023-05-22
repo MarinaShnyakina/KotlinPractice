@@ -1,5 +1,5 @@
 package ru.synergy.kotlinpractice
-
+/*
 class Car: Movable {
     override var speed: Int = 60
 
@@ -18,3 +18,4 @@ class Aircraft: Movable {
         print("Приземление")
     }
 }
+*/

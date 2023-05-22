@@ -1,5 +1,5 @@
 package ru.synergy.kotlinpractice
-
+/*
 interface Movable {
     var speed: Int
     fun move()
@@ -7,3 +7,5 @@ interface Movable {
         print("Остановка")
     }
 }
+
+ */
