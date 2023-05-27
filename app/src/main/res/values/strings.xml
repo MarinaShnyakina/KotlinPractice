@@ -4,4 +4,18 @@
     <string name="editTextValue">Кол-во подписчиков</string>
     <string name="textButton">Показать результат</string>
     <string name="editTextPassword">Введите ваш пароль</string>
+    <string name="youtube" translatable="false">Youtube</string>
+    <string name="people" translatable="false">People</string>
+    <string name="signIn" translatable="false">Войти</string>
+    <string name="signUp" translatable="false">Зарегистрироваться</string>
+    <string name="avatar" translatable="false">Аватар</string>
+    <string name="login" translatable="false">Логин</string>
+    <string name="hintLogin" translatable="false">Введите ваш email</string>
+    <string name="password" translatable="false">Пароль</string>
+    <string name="hintPassword" translatable="false">Введите ваш пароль</string>
+    <string name="firstName" translatable="false">Имя</string>
+    <string name="lastName" translatable="false">Фамилия</string>
+    <string name="phone" translatable="false">Телефон</string>
+    <string name="save" translatable="false">Сохранить</string>
+    <string name="practice" translatable="false">Практика</string>
 </resources>

@@ -22,12 +22,12 @@ class Workers : AppCompatActivity() {
 
             when (resultValue) {
 
-                Constance.DEVELOPER -> {
+                ConstanceEmployee.DEVELOPER -> {
                     bindingClass.textViewResult.visibility = View.VISIBLE
                     bindingClass.imageViewPhoto.visibility = View.VISIBLE
-                    val timeText = "Получите ваши ${Constance.DEVELOPER_SALARY}"
+                    val timeText = "Получите ваши ${ConstanceEmployee.DEVELOPER_SALARY}"
                     if (bindingClass.editTextPassword.text.toString()
-                       == Constance.DEVELOPER_PASSWORD
+                       == ConstanceEmployee.DEVELOPER_PASSWORD
                    ) {
                         bindingClass.textViewResult.text = timeText
                         bindingClass.imageViewPhoto.setImageResource(R.drawable.developer)
@@ -35,12 +35,12 @@ class Workers : AppCompatActivity() {
                         bindingClass.textViewResult.text = "Неверный пароль"
                     }
                 }
-                Constance.COACH -> {
+                ConstanceEmployee.COACH -> {
                     bindingClass.textViewResult.visibility = View.VISIBLE
                     bindingClass.imageViewPhoto.visibility = View.VISIBLE
-                    val timeText = "Получите ваши ${Constance.COACH_SALARY}"
+                    val timeText = "Получите ваши ${ConstanceEmployee.COACH_SALARY}"
                     if (bindingClass.editTextPassword.text.toString()
-                            == Constance.COACH_PASSWORD
+                            == ConstanceEmployee.COACH_PASSWORD
                         ) {
                         bindingClass.textViewResult.text = timeText
                         bindingClass.imageViewPhoto.setImageResource(R.drawable.coach)
@@ -49,12 +49,12 @@ class Workers : AppCompatActivity() {
                         }
                 }
 
-                Constance.MANAGER -> {
+                ConstanceEmployee.MANAGER -> {
                     bindingClass.textViewResult.visibility = View.VISIBLE
                     bindingClass.imageViewPhoto.visibility = View.VISIBLE
-                    val timeText = "Получите ваши ${Constance.MANAGER_SALARY}"
+                    val timeText = "Получите ваши ${ConstanceEmployee.MANAGER_SALARY}"
                     if (bindingClass.editTextPassword.text.toString()
-                            == Constance.MANAGER_PASSWORD
+                            == ConstanceEmployee.MANAGER_PASSWORD
                         ) {
                         bindingClass.textViewResult.text = timeText
                         bindingClass.imageViewPhoto.setImageResource(R.drawable.manager)

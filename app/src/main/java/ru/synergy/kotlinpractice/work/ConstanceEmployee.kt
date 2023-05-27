@@ -1,6 +1,6 @@
 package ru.synergy.kotlinpractice.work
 
-object Constance {
+object ConstanceEmployee {
     const val DEVELOPER_SALARY = 100_000
     const val COACH_SALARY = 150_000
     const val MANAGER_SALARY = 40_000

@@ -1,6 +1,7 @@
 package ru.synergy.kotlinpractice
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -14,10 +15,40 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import ru.synergy.kotlinpractice.databinding.ActivityYoutuberBinding
+import ru.synergy.kotlinpractice.registration.Registration
+import ru.synergy.kotlinpractice.youtuber.Youtuber
 import java.util.Objects
 
 
 class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+    }
+
+        fun onClickGoYoutube(view: View) {
+            val intent = Intent(this, Youtuber::class.java)
+            startActivity(intent)
+
+        }
+
+        fun onClickGoPeople(view: View) {
+            val intent = Intent(this, People::class.java)
+            startActivity(intent)
+
+        }
+
+        fun onClickRegistration(view: View) {
+            val intent = Intent(this, Registration::class.java)
+            startActivity(intent)
+        }
+
+
+
+    }
+
+
 
     /* ПЕРЕДАЧА ДАННЫХ МЕЖДУ ОДНОЙ КОРУТИНЫ И ДРУГОЙ
 
@@ -31,9 +62,7 @@ class MainActivity : AppCompatActivity() {
     */
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_youtuber)
+
 
         // ВНУТРЕННИЕ И АНОНИМНЫЕ КЛАССЫ
 
@@ -408,6 +437,3 @@ suspend fun doWork() {
                 emit(item)   // имитируем значение
                 i++
             } */
-        }
-
-}
