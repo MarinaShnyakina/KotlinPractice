@@ -12,3 +12,5 @@ My knowledge
 - Conditional values
 - Resources
 - Qualifiers
+- Array
+- List
