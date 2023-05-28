@@ -14,3 +14,4 @@ My knowledge
 - Qualifiers
 - Array
 - List, ArrayList
+- Cycles: for, forEach, while, do while
