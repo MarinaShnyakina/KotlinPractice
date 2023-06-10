@@ -18,18 +18,18 @@ class Students {
 
     fun rating() {
 
-        for ((index, grade) in gradeArray.withIndex()) {
-            when (grade) {
-                in bad -> badArray.add("Плохие оценки: Ученик: ${nameArray[index]} - $grade")
-                in normal -> normalArray.add("Нормальные оценки: Ученик: ${nameArray[index]} - $grade")
-                in nice -> niceArray.add("Хорошие оценки: Ученик: ${nameArray[index]} - $grade")
-                great -> greatArray.add("Отличные оценки: Ученик: ${nameArray[index]} - $grade")
+        for ((index,name) in nameArray.withIndex()) {
+            when (gradeArray[index]) {
+                in bad -> badArray.add("Плохие оценки: Ученик: $name - ${gradeArray[index]}")
+                in normal -> normalArray.add("Нормальные оценки: Ученик: $name - ${gradeArray[index]}")
+                in nice -> niceArray.add("Хорошие оценки: Ученик: $name - ${gradeArray[index]}")
+                great -> greatArray.add("Отличные оценки: Ученик: $name - ${gradeArray[index]}")
             }
-
-            badArray.forEach {Log.d("Log", it)}
-            normalArray.forEach {Log.d("Log", it)}
-            niceArray.forEach {Log.d("Log", it)}
-            greatArray.forEach {Log.d("Log", it)}
         }
+
+        badArray.forEach { Log.d("Log", it) }
+        normalArray.forEach { Log.d("Log", it) }
+        niceArray.forEach { Log.d("Log", it) }
+        greatArray.forEach { Log.d("Log", it) }
     }
 }

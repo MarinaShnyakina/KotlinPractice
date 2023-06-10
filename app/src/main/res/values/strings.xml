@@ -18,4 +18,10 @@
     <string name="phone" translatable="false">Телефон</string>
     <string name="save" translatable="false">Сохранить</string>
     <string name="practice" translatable="false">Практика</string>
+    <string name="title" translatable="false">Вычислить "C"</string>
+    <string name="resultInfo" translatable="false">Результат: </string>
+    <string name="inputA" translatable="false">Введите значение "a"</string>
+    <string name="inputB" translatable="false">Введите значение "b"</string>
+    <string name="result" translatable="false">Результат</string>
+    <string name="error" translatable="false">Поле должно быть заполнено</string>
 </resources>
