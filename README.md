@@ -17,3 +17,5 @@ My knowledge
 - Cycles: for, forEach, while, do while
 - Classes
 - Functions
+- RecyclerView
+- RecyclerView.Adapter
