@@ -19,3 +19,4 @@ My knowledge
 - Functions
 - RecyclerView
 - RecyclerView.Adapter
+- Menu, Toolbar
