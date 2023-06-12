@@ -20,3 +20,4 @@ My knowledge
 - RecyclerView, RecyclerView.Adapter
 - Menu, Toolbar
 - BottomNavigationView
+- DrawerLayout
