@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">KotlinPractice</string>
     <string name="button_open">Open</string>
+    <string name="button_openNavView">Open Navigation View</string>
     <string name="content">Main content</string>
     <string name="button_star">You star</string>
+    <string name="category_1">Category 1</string>
+    <string name="category_2">Category 2</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_11">Item 11</string>
+    <string name="item_22">Item 22</string>
+    <string name="item_33">Item 33</string>
+    <string name="item_44">Item 44</string>
+    <string name="smart">You are doing great</string>
 </resources>

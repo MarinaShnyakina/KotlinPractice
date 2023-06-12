@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:openDrawer="start"
     tools:context=".drawerLayout.DrawerLayout">
 
     <LinearLayout
@@ -28,33 +29,14 @@
             android:layout_height="wrap_content"
             android:text="@string/button_open" />
 
-        <Button
-            android:id="@+id/buttonOpenNavView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_openNavView"
-            android:onClick="openNavView"/>
-
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="200dp"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_gravity="start"
-        android:background="@color/teal_700">
-
-        <Button
-            android:id="@+id/buttonStar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_star" />
-
-        <ImageView
-            android:id="@+id/imageStar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/btn_star_big_on" />
-    </LinearLayout>
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/header"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
