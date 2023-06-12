@@ -22,3 +22,4 @@ My knowledge
 - BottomNavigationView
 - DrawerLayout
 - NavigationView and header
+- Fragment
