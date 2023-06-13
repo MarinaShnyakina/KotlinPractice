@@ -21,3 +21,5 @@ My knowledge
 - Menu, Toolbar
 - BottomNavigationView
 - DrawerLayout
+- NavigationView and header
+- Fragment
