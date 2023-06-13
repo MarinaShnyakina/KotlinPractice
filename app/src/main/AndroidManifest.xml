@@ -13,21 +13,8 @@
         android:theme="@style/Theme.KotlinPractice"
         tools:targetApi="31">
         <activity
-            android:name=".NavigationView"
+            android:name=".countDownTimer.CountDownTimer"
             android:exported="false" />
-        <!-- <activity -->
-        <!-- android:name=".theorem" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".registration.SignInUp" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".registration.Registration" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".youtuber.Youtuber" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity android:name=".People" /> -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />

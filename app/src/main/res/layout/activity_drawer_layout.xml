@@ -35,6 +35,12 @@
             android:text="@string/button_openNavView"
             android:onClick="openNavView"/>
 
+        <Button
+            android:id="@+id/buttonPageTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textTimer" />
+
     </LinearLayout>
 
     <LinearLayout
